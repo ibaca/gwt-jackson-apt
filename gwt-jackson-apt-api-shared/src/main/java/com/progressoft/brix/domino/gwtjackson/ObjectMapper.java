@@ -24,4 +24,9 @@ package com.progressoft.brix.domino.gwtjackson;
  * @version $Id: $
  */
 public interface ObjectMapper<T> extends ObjectReader<T>, ObjectWriter<T> {
+
+    JsonDeserializer<T> getDeserializer();
+
+    JsonSerializer<T> getSerializer();
+
 }
